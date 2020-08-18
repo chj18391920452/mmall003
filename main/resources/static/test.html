@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+    <div class="i_bg bg_color">
+        <div class="i_ban_bg">
+            <div class="banner" style="width: 978px">
+                <div class="top_slide_wrap" style="width: 978px">
+                    <ul class="slide_box bxslider" style="width: 978px">
+                        <li><img src="/images/1.png" width="978" height="401" /></li>
+                        <li><img src="/images/2.png" width="978" height="401" /></li>
+                        <li><img src="/images/3.png" width="978" height="401" /></li>
+                    </ul>
+                    <div class="op_btns clearfix" style="width: 978px">
+                        <a href="#" class="op_btn op_prev"><span></span></a> <a href="#"
+                                                                                class="op_btn op_next"><span></span></a>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var jq2 = jQuery.noConflict();
+                (function() {
+                    $(".bxslider").bxSlider({
+                        auto : true,
+                        prevSelector : jq2(".top_slide_wrap .op_prev")[0],
+                        nextSelector : jq2(".top_slide_wrap .op_next")[0]
+                    });
+                })();
+            </script>
+        </div>
+    </div>
+</body>
+</html>
